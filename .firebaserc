@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "api": "beir-et",
+    "default": "beir-et"
+  }
+}

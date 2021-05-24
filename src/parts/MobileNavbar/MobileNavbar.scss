@@ -1,0 +1,96 @@
+@media only screen and (max-width: 500px) {
+  .MobileNavber {
+    position: relative;
+    z-index: 999;
+    &__main {
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .modal__header {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  .MobileNavber__box {
+    height: 100%;
+
+    // start twittern btn style
+    &__twitternButton {
+      position: absolute;
+      right: 20px;
+      top: -80px;
+
+      .bigButton {
+        display: none !important;
+      }
+
+      .smallButton {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 10px,
+          rgba(136, 153, 166, 0.25) 0px 1px 3px 1px;
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &__tabs {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      vertical-align: middle;
+      height: 100%;
+
+      .MobileNavber__box__tab {
+        &__icon {
+          font-size: 22px;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: -6px;
+            right: -10px;
+            font-size: 11px;
+            display: inline-block;
+            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            box-sizing: content-box;
+            text-align: center;
+          }
+        }
+
+        .settingsBox {
+          right: -10px;
+          bottom: 39px;
+        }
+
+        .Navbar__box__tab__text {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.buttons__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+@media only screen and (min-width: 501px) {
+  .MobileNavber {
+    display: none;
+  }
+}

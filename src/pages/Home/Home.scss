@@ -1,0 +1,116 @@
+@import "../../style/CssVariables.scss";
+
+.home-box {
+  height: auto;
+  width: 45%;
+  margin-left: 25%;
+  padding-bottom: 60px;
+  overflow: auto;
+
+  &__title {
+    padding: 15px 10px;
+    height: 53px;
+    position: fixed;
+    width: 45%;
+    z-index: 100;
+    h1 {
+      font-size: 19px;
+      font-weight: 800;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    margin-top: 53px;
+  }
+
+  &__addNewPostWrapper {
+    padding: 10px;
+  }
+
+  &__SettingsButton {
+    font-size: 15px;
+    padding: 0 14px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: $radius;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &__icon {
+      margin-right: 5px;
+    }
+  }
+
+  &__note {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &__spinner {
+    .loader__box {
+      margin-top: 0;
+    }
+  }
+
+  .whoToAdd {
+    display: none;
+
+    &__title {
+      h2 {
+        padding: 15px 10px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .home-box {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 49px;
+    padding-bottom: 0;
+    &__title {
+      width: 100%;
+    }
+
+    .whoToAdd {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
+  /* For tablet: */
+  .home-box {
+    width: 75%;
+    margin-left: 15%;
+    &__title {
+      width: 75%;
+    }
+    .whoToAdd {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  /* For small lab: */
+  .home-box {
+    width: 50%;
+    margin-left: 10%;
+    &__title {
+      width: 50%;
+    }
+  }
+}

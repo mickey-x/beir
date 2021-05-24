@@ -1,0 +1,203 @@
+@import "../../style/CssVariables";
+
+.Navbar {
+  position: relative;
+  z-index: 100;
+  &__main {
+    height: 100vh;
+    width: 25%;
+    position: fixed;
+  }
+}
+
+.Navbar__box {
+  padding: 20px 10% 20px 30%;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 5px;
+
+    &__box {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__tabs {
+    .Navbar__box__tab {
+      margin-bottom: 20px;
+      a {
+        text-decoration: none;
+        padding-left: 5px;
+        &:hover {
+          background: $secondaryColor;
+          border-radius: $radius;
+          padding: 12px 15px 12px 5px;
+        }
+        &:hover .Navbar__box__tab__icon > i {
+          color: $mainColor !important;
+        }
+        &:hover .Navbar__box__tab__text {
+          color: $mainColor !important;
+        }
+      }
+      &__icon {
+        width: 30px;
+        text-align: center;
+        font-size: 22px;
+        margin-right: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+        span {
+         position: absolute;
+        top: -6px;
+        right: -4px;
+        font-size: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        box-sizing: content-box;
+        text-align: center;
+        }
+      }
+      &__text {
+        font-size: 19px;
+        font-weight: 700;
+        display: inline-block;
+      }
+    }
+    .--twitternButton {
+      .smallButton {
+        display: none;
+        border-radius: 50%;
+        width: 100%;
+        height: 46px;
+      }
+    }
+  }
+}
+
+.buttons__box {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .Navbar__main {
+    width: 0;
+    display: none;
+  }
+
+  .--twitternButton {
+    .bigButton {
+      display: none;
+    }
+  }
+
+  .--twitternButton {
+    .smallButton {
+      display: block !important;
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
+  /* For tablet: */
+  .Navbar__main {
+    width: 15%;
+  }
+  .Navbar__box {
+    padding: 20px 30% 20px 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__logo {
+      padding-right: 8px;
+    }
+  }
+
+  .Navbar__box__tabs {
+    .Navbar__box__tab {
+      a {
+        padding: 12px 8px;
+
+        &:hover {
+          background: rgba(29, 161, 242, 0.1);
+          border-radius: 9999px;
+          padding: 12px 8px;
+        }
+      }
+      &__icon {
+        margin-right: 0;
+      }
+      &__text {
+        display: none;
+      }
+    }
+  }
+
+  .--twitternButton {
+    .bigButton {
+      display: none;
+    }
+  }
+  .--twitternButton {
+    .smallButton {
+      display: block !important;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  /* For small lab: */
+  .Navbar__main {
+    width: 10%;
+  }
+
+  .Navbar__box {
+    padding: 20px 20% 20px 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__logo {
+      padding-right: 8px;
+    }
+  }
+
+  .Navbar__box__tabs {
+    .Navbar__box__tab {
+      a {
+        padding: 12px 8px;
+
+        &:hover {
+          background: rgba(29, 161, 242, 0.1);
+          border-radius: 9999px;
+          padding: 12px 8px;
+        }
+      }
+      &__icon {
+        margin-right: 0;
+      }
+      &__text {
+        display: none;
+      }
+    }
+  }
+
+  .--twitternButton {
+    .bigButton {
+      display: none;
+    }
+  }
+  .--twitternButton {
+    .smallButton {
+      display: block !important;
+    }
+  }
+}

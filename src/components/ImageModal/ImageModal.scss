@@ -1,0 +1,24 @@
+@import "../../style/CssVariables.scss";
+
+.__react_modal_image__header {
+  background-color: transparent !important;
+}
+
+.__react_modal_image__modal_container {
+  background-color: rgba(21, 32, 43, 0.9) !important;
+  z-index: 999999999 !important;
+}
+
+.__react_modal_image__icon_menu svg {
+  background: $mainColor !important;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.__react_modal_image__icon_menu {
+  float: left !important;
+}
+
+.__react_modal_image__modal_content{
+   pointer-events: none;
+}

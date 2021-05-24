@@ -1,0 +1,49 @@
+.avatarLoad {
+  background-color: #15202b80;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  position: absolute;
+  left: 0;
+
+  .loader__box {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
+.editPPImage {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-80%);
+  right: -5px;
+
+  input {
+    display: none;
+  }
+
+  i {
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 161, 242);
+    padding: 8px;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .editPPImage {
+    i {
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+}
