@@ -1,14 +1,10 @@
-# Twirrer | Frontend
+# Beir | Backend
 
-Using 'React.js' + 'React Hooks' + 'React Context api' to build the frontend of Twirrer.
+Using 'firebase' + 'express' to build the backend of Beir.
 
-## Live Demo
-[twirrer.netlify.app](https://twirrer.netlify.app/)
-
-## How to run the app locally?
 
 ### 1- API Base URL
-add `https://europe-west3-twirrer-app.cloudfunctions.net/api` as the 'proxy' value in package.json
+add `https://europe-west3-beir-app.cloudfunctions.net/api` as the 'proxy' value in package.json
 
 ### 2- Install packages
 run `npm install`
